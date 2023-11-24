@@ -8,6 +8,9 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 ul {
@@ -40,6 +43,9 @@ ul {
 /* Hero section */
 .hero-title {
   color: var(--color-primary-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
 }
 
 .hero-title .accent {
@@ -54,4 +60,14 @@ ul {
 
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+/*Traditions section*/
+.traditions-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+.traditions-text .uppercase {
+  text-transform: uppercase;
 }
