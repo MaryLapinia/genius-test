@@ -36,6 +36,8 @@ address {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -82,11 +84,34 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+}
+
+/*Header*/
+.header {
+  background-color: lightgray;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px; /*Замість "margin" - надає кожному наступному єлементу відступ (окрім останнього елемента)*/
+  flex-grow: 1; /*Елемент розтягується та займає усе доступне місце*/
+  justify-content: center; /*Вирівнювання вздовж головної вісі*/
 }
 
 /* Hero section */
-
 .hero-section {
   padding: 272px 0;
 }
@@ -104,12 +129,19 @@ ul {
 }
 
 /* Advantages section*/
-.advantages-list {
+.advantages-section {
   background-color: var(--color-brand-light);
-  color: var(--color-primary-light);
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between; /*Розтягуються елементи на всю сторінку з однаковими відступами*/
+  gap: 40px;
 }
 
 .advantages-item {
+  color: var(--color-primary-light);
   font-weight: 300;
   font-size: 20px;
 }
@@ -130,6 +162,16 @@ ul {
   padding-top: 96px;
 }
 
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
@@ -141,6 +183,10 @@ ul {
 
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+
+.traditions-text.limited {
+  max-width: 340px;
 }
 
 /*Chef section*/
@@ -155,6 +201,23 @@ ul {
 }
 
 /*Formats section*/
+
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  border: 1px solid lightgray; /*remove*/
+  border-radius: 16px;
+  padding: 24px;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
