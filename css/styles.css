@@ -114,6 +114,7 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
+  background-image: url(../images/hero-section-background.jpg);
 }
 
 .hero-title {
