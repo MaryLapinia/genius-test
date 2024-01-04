@@ -89,6 +89,7 @@ ul {
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .link:hover {
@@ -97,7 +98,11 @@ ul {
 
 /*Header*/
 .header {
-  background-color: lightgray; /*remove*/
+  position: absolute;
+  top: o;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
 }
 
 .header-container {
@@ -123,7 +128,13 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
-  background-image: url(../images/hero-section-background.jpg);
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 98.36%
+    ),
+    url(../images/hero-section-background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -294,6 +305,11 @@ ul {
     var(--color-primary-dark) 100%
   );
   height: 444px;
+  transition: transform 0.3s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
 }
 
 .formats-title {
@@ -328,6 +344,10 @@ ul {
 .carousel-button:hover {
   background-color: var(--color-primary-dark);
   fill: var(--color-primary-light);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 /*Contact section*/
@@ -412,6 +432,7 @@ ul {
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .adress-link:hover {
@@ -420,6 +441,7 @@ ul {
 
 .address-icon {
   fill: var(--color-primary-light);
+  transition: fill 0.3s;
 }
 
 .address-icon:hover {
@@ -443,6 +465,8 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -453,8 +477,10 @@ ul {
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
 }
