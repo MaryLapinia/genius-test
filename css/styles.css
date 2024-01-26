@@ -85,6 +85,13 @@ ul {
   background-color: transparent;
 }
 
+/*.button:disabled {
+  background-color: lightgray;
+  color: gray;
+  border-color: currentColor;
+  cursor: not-allowed;
+}*/
+
 /* Link */
 .link {
   color: var(--color-primary-light);
@@ -520,6 +527,14 @@ ul {
   border-color: var(--color-brand-normal);
   outline: none;
 }
+
+/*.form-input:disabled {
+  border-color: lightgray;
+}
+
+.form-input:disabled::placeholder {
+  color: lightgray;
+}*/
 
 .form-input::placeholder {
   color: var(--color-secondary-dark);
