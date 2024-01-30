@@ -15,7 +15,7 @@
     rel="stylesheet">
 
   <!--Styles-->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./scss/main.css" />
 </head>
 
 <body>
@@ -275,7 +275,8 @@
 
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required>
+          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required
+            pattern="[^0-9]{3,16}">
         </div>
 
         <div class="form-field">
@@ -287,7 +288,7 @@
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
           <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта"
-            required>
+            required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{3,}$">
         </div>
 
         <button class="form-button button" type="submit">Замовити дзвінок</button>
