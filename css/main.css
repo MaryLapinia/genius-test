@@ -1,4 +1,28 @@
 @charset "UTF-8";
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2"), url("../fonts/poppins-v20-latin-300.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2"), url("../fonts/poppins-v20-latin-900.woff") format("woff");
+}
 :root {
   --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
@@ -110,8 +134,7 @@ ul {
   width: 100%;
   padding-top: 32px;
 }
-
-.header-container {
+.header .header-container {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -515,19 +538,10 @@ ul {
 .form-input:disabled::placeholder {
   color: lightgray;
 }*/
-.form-input::-moz-placeholder {
-  color: var(--color-secondary-dark);
-  font-size: 16px;
-  line-height: 1.17;
-}
 .form-input::placeholder {
   color: var(--color-secondary-dark);
   font-size: 16px;
   line-height: 1.17;
-}
-
-.form-input:focus::-moz-placeholder {
-  color: var(--color-primary-dark);
 }
 
 .form-input:focus::placeholder {
