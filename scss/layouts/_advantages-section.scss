@@ -1,0 +1,16 @@
+.advantages-section {
+  background-color: var(--color-brand-normal);
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between; /*Розтягуються елементи на всю сторінку з однаковими відступами*/
+  gap: 40px;
+}
+
+.advantages-item {
+  color: var(--color-primary-light);
+  font-weight: 300;
+  font-size: 20px;
+}
