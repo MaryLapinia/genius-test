@@ -1,31 +1,33 @@
-.chefs-title {
-  position: relative;
-  margin: 0 auto 80px;
-}
+.chefs-section {
+  &__title {
+    position: relative;
+    margin: 0 auto 80px;
 
-.chefs-title::before,
-.chefs-title::after {
-  position: absolute;
-  bottom: 24px;
-  display: block;
-  width: 352px;
-  border: 2px solid #cfcfbc;
-  content: '';
-}
+    &::before,
+    &::after {
+      position: absolute;
+      bottom: 24px;
+      display: block;
+      width: 352px;
+      border: 2px solid #cfcfbc;
+      content: '';
+    }
 
-.chefs-title::before {
-  left: 0;
-}
+    &::before {
+      left: 0;
+    }
 
-.chefs-title::after {
-  right: 0;
-}
+    &::after {
+      right: 0;
+    }
+  }
 
-.chefs-list {
-  display: flex;
-  gap: 40px 30px;
-}
+  &__list {
+    display: flex;
+    gap: 40px 30px;
+  }
 
-.chefs-item {
-  flex-basis: calc(100% - 30px / 2);
+  &__item {
+    flex-basis: calc(100% - 30px / 2);
+  }
 }

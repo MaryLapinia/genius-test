@@ -13,29 +13,30 @@
   );
   height: 444px;
   transition: transform 0.3s;
-}
+  overflow: hidden;
 
-.format-card:hover {
-  transform: scale(1.05);
-}
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
-.format-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary-light);
+  }
 
-.format-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--color-primary-light);
-}
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+  }
 
-.format-text {
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--color-primary-light);
+  &:hover {
+    transform: scale(1.05);
+  }
 }
