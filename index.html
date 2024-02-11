@@ -8,11 +8,11 @@
   <title>Сучасна пекарня</title>
 
   <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;600&family=Poppins:wght@300;400;600;900&family=Roboto&display=swap"
-    rel="stylesheet">
+    rel="stylesheet">-->
 
   <!--Styles-->
   <link rel="stylesheet" href="./css/main.min.css" />
@@ -24,12 +24,12 @@
     <div class="container">
       <div class="header__container">
         <nav class="header__nav">
-          <a href="./index.html" target="_blank">
+          <a href="./index.html">
             <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
           </a> <!--logo-->
           <ul class="header__menu">
-            <li><a class="link" href="#tradition-section">Наші традиції</a></li>
-            <li><a class="link" href="#cookers-section">Шеф-кухарі</a></li>
+            <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
             <li><a class="link" href="#formats-section">Формати</a></li>
             <li><a class="link" href="#contact-section">Контакти</a></li>
           </ul>
@@ -43,7 +43,37 @@
           </svg>
         </button>
         <div class="mobile-menu">
-          <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            <svg class="footer__socials-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <a class="mobile-menu__logo" href="./index.html">
+            <img src="./images/logo-dark.svg" alt="Логотип сучасної пекарні">
+          </a>
+
+          <ul class="mobile-menu__list">
+            <li>
+              <a class="mobile-menu__link" href="#traditions-section">
+                Наші традиції
+              </a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#chefs-section">
+                Шеф-кухарі
+              </a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#formats-section">Формати</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#contact-section">
+                Контакти
+              </a>
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>
@@ -241,7 +271,8 @@
                 <label class="input__label visually-hidden" for="user-name">
                   Ім'я
                 </label>
-                <input class="input__control" type="text" id="user-name" name="user-name" placeholder="Ім'я" required>
+                <input class="input__control" type="text" id="user-name" name="user-name" placeholder="Ім'я" required
+                  pattern="[^0-9]{3,16}">
               </div>
 
               <div class="contact-section__form-field input">
@@ -257,7 +288,7 @@
                   Електронна пошта
                 </label>
                 <input class="input__control" type="email" id="user-email" name="user-email"
-                  placeholder="Електронна пошта" required>
+                  placeholder="Електронна пошта" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{3,}$">
               </div>
 
               <button class="contact-section__button button" type="submit">Замовити дзвінок</button>
@@ -268,7 +299,7 @@
           </div>
           <iframe class="contact-section__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.164054656807!2d30.488658576486998!3d50.45666967159343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1700394765550!5m2!1sru!2sua"
-            width="603" height="595" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </div>
@@ -278,61 +309,57 @@
     <div class="container">
       <div class="footer__container">
         <nav class="footer__nav">
-          <div class="footer__log">
+          <div class="footer__logo">
             <a href="#">
               <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
             </a>
           </div>
           <ul class="footer__menu">
             <li>
-              <a class="link" href="#">Наші традиції</a>
+              <a class="link" href="#traditions-section">Наші традиції</a>
             </li>
             <li>
-              <a class="link" href="#">Шеф-кухарі</a>
+              <a class="link" href="#chefs-section">Шеф-кухарі</a>
             </li>
             <li>
-              <a class="link" href="#">Формати</a>
+              <a class="link" href="#formats-section">Формати</a>
             </li>
             <li>
-              <a class="link" href="#">Контакти</a>
+              <a class="link" href="#contact-section">Контакти</a>
             </li>
           </ul>
         </nav>
         <address class="footer__address">
-          <div class="footer__address-contacts">
+          <div class="footer__contacts">
             <ul class="footer__address-list">
               <li>
-                <a class="footer__adress-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+                <a class="footer__address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
               </li>
               <li>
-                <a class="footer__adress-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                <a class="footer__address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
               </li>
               <li>
-                <a class="footer__adress-link"
+                <a class="footer__address-link"
                   href="https://www.bing.com/maps?osid=dd83bfb6-9dec-4484-9525-e706451f4b24&cp=50.45663~30.490494&lvl=11&pi=0&v=2&sV=2&form=S00027"
                   target="_blank">Україна, м. Київ, вул. Січових Стрільців 54</a>
               </li>
             </ul>
-            <div>
-              <li>
-                <a href="#">
-                  <svg class="footer__address-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="footer__address-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+            <div class="footer__socials">
+              <a href="#">
+                <svg class="footer__socials-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__socials-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="footer__address-info">
-            <a class="footer__adress-link" href="#" target="_blank">Політика конфіденційності</a>
-            <p class="footer__adress-copyright">&copy; 2023 Дані захищені</p>
+            <a class="footer__address-link" href="#">Політика конфіденційності</a>
+            <p class="footer__address-copyright">&copy; 2023 Дані захищені</p>
           </div>
         </address>
       </div>
@@ -341,9 +368,13 @@
 
   <div class="backdrop is-hidden">
     <div class="modal">
-      <button class="modal__btn-close modal-btn-close" type="button">Close</button>
-      <h2>Замовити дзвінок</h2>
-      <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+      <button class="modal__btn-close modal-btn-close" type="button">
+        <svg class="footer__socials-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title">Замовити дзвінок</h2>
+      <p class="modal__text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
       <form name="modal-form" autocomplete="off">
 
         <div class="modal__form-field input">
@@ -366,7 +397,7 @@
 
         <button class="modal__button button" type="submit">Замовити дзвінок</button>
         <p class="form-terms">Натискаючи на кнопку я погоджуюсь з
-          <a class="form-terms-link" href="#">політикою конфіденційності</a>
+          <a class="form-terms__link" href="./index.html">політикою конфіденційності</a>
         </p>
       </form>
     </div>
