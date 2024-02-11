@@ -89,6 +89,8 @@
 
     &:hover {
       color: var(--color-brand-normal);
+      transform: translateX(100%);
+      transition: 0.3s;
     }
   }
 }
