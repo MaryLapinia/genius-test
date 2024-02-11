@@ -27,12 +27,6 @@
       url('../images/hero-section-background@2x.jpg');
   }
 
-  @media screen and (min-width: $bp-desktop) {
-    font-size: 128px;
-    line-height: 1.5;
-    margin-bottom: 0;
-  }
-
   &__title {
     margin-bottom: 48px;
     color: var(--color-primary-light);
