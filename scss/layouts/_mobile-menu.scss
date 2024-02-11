@@ -70,7 +70,7 @@
   }
 
   &__logo {
-    margin-bottom: 32px;
+    margin-bottom: 100px;
   }
 
   &__list {
@@ -81,9 +81,10 @@
   }
 
   &__link {
+    padding: 15px;
     color: var(--color-primary-dark);
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.16;
     text-decoration: none;
 
     &:hover {
