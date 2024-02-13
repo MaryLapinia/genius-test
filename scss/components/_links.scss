@@ -3,7 +3,19 @@
   text-decoration: none;
   transition: color 0.3s;
 
-  &:hover {
+  /*&:hover {
     color: var(--color-brand-normal);
+  }*/
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--color-brand-normal);
+    }
+  }
+
+  @media (hover: none) {
+    &:hover:active {
+      color: var(--color-brand-normal);
+    }
   }
 }

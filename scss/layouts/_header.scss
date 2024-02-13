@@ -1,13 +1,11 @@
 .header {
-  position: absolute;
-  top: o;
-  left: 0;
+  position: sticky;
+  top: 0;
   width: 100%;
-  padding-top: 16px;
-
-  @media screen and (min-width: $bp-desktop) {
-    padding-top: 32px;
-  }
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #bebe8d;
+  z-index: 2;
 
   &__container {
     display: flex;

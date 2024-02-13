@@ -12,10 +12,24 @@
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
 
-  &:hover {
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-primary-dark);
+      fill: var(--color-primary-light);
+    }
+  }
+
+  @media (hover: none) {
+    &:hover:active {
+      background-color: var(--color-primary-dark);
+      fill: var(--color-primary-light);
+    }
+  }
+
+  /*&:hover {
     background-color: var(--color-primary-dark);
     fill: var(--color-primary-light);
-  }
+  }*/
 
   &.next {
     transform: rotate(180deg);

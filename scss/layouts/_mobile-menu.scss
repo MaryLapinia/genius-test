@@ -87,10 +87,22 @@
     line-height: 1.16;
     text-decoration: none;
 
-    &:hover {
+    @media (hover: hover) {
+      &:hover {
+        color: var(--color-brand-normal);
+      }
+    }
+
+    @media (hover: none) {
+      &:hover:active {
+        color: var(--color-brand-normal);
+      }
+    }
+
+    /*&:hover {
       color: var(--color-brand-normal);
       transform: translateX(100%);
       transition: 0.3s;
-    }
+    }*/
   }
 }
