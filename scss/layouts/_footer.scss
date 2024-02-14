@@ -127,11 +127,23 @@
 
   &__socials-icon {
     fill: var(--color-brand-light);
+
+    @media (hover: hover) {
+      &:hover {
+        fill: var(--color-brand-normal);
+      }
+    }
+
+    @media (hover: none) {
+      &:hover:active {
+        fill: var(--color-brand-normal);
+      }
+    }
   }
 
-  &__socials-icon:hover {
+  /*&__socials-icon:hover {
     fill: var(--color-brand-normal);
-  }
+  }*/
 
   &__address-copyright {
     font-size: 14px;
