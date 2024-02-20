@@ -12,6 +12,10 @@ const swiper = new Swiper('.swiper-container', {
   },
   pagination: {
     el: '.pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '"></span>';
+    },
     bulletClass: 'pagination__button',
     bulletActiveClass: 'pagination__button--active',
   },
